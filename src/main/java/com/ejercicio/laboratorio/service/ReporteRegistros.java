@@ -6,9 +6,10 @@ import com.ejercicio.laboratorio.model.SobreCargaRuta;
 import com.ejercicio.laboratorio.model.ViajePorUsuario;
 
 import java.util.List;
+import java.util.Map;
 
 public interface ReporteRegistros {
-    Integer calculoAfluenciaPorEstacion(List<Registro> listaRegistros);
+    Map<String, Integer> calculoAfluenciaPorEstacion(List<Registro> listaRegistros);
     List<HorasPico> calculoHoraPico(List<Registro> listaRegistros);
     List<String> rutasMasUtilizadas(List<Registro> listaRegistros);
     List<ViajePorUsuario> estacionesVisitadas(List<Registro> listaRegistros);
