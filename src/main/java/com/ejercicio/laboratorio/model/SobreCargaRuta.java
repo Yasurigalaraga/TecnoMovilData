@@ -4,6 +4,11 @@ public class SobreCargaRuta {
     private String ruta;
     private Integer cantidad;
 
+    public SobreCargaRuta(String ruta, Integer cantidad) {
+        this.ruta = ruta;
+        this.cantidad = cantidad;
+    }
+
     public String getRuta() {
         return ruta;
     }

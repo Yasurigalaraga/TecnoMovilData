@@ -9,6 +9,14 @@ public class Registro {
     private Accion accion;
     private LocalDateTime fechaRegistro;
 
+    public Registro(Integer idUsuario, String ruta, String estacion, Accion accion, LocalDateTime fechaRegistro) {
+        this.idUsuario = idUsuario;
+        this.ruta = ruta;
+        this.estacion = estacion;
+        this.accion = accion;
+        this.fechaRegistro = fechaRegistro;
+    }
+
     public Integer getIdUsuario() {
         return idUsuario;
     }
