@@ -13,6 +13,6 @@ public interface ReporteRegistros {
     List<HorasPico> calculoHoraPico(List<Registro> listaRegistros);
     List<String> rutasMasUtilizadas(List<Registro> listaRegistros);
     List<ViajePorUsuario> estacionesVisitadas(List<Registro> listaRegistros);
-    Double promedioEntreEstaciones(List<Registro> listaRegistros);
+    Map<String, Double> promedioEntreEstaciones(List<Registro> listaRegistros);
     List<SobreCargaRuta> rutasSobrecargadas(List<Registro> listaRegistros);
 }
